@@ -1,0 +1,81 @@
+/* shared styles  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    padding:0 140px
+}
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.display-flex{
+    display: flex;
+}
+.text-primary{
+    color:#FEA301;
+}
+.text-secondary{
+    color:#01ACFD;
+}
+
+.btn-primary{
+    padding: 10px 45px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero banner styles  */
+.banner-container{
+    align-items: center;
+    gap: 50px;
+
+}
+.banner-img{
+    width: 100%;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.banner-description{
+    font-size: 1.25rem;
+    margin: 24px 0;
+}
+
+
+
+
+
+/* media query for responsiveness  */
+@media only screen and (max-width: 576px) {
+    body{
+        padding: 0 1rem;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+    }
+    .banner-description{
+        font-size: 0.88rem;
+        font-weight:500;
+    }
+    .btn-primary{
+        margin: 0 auto;
+    }
+}
