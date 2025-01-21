@@ -3,8 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    padding:0 140px
+section, header{
+    padding:0 140px;
 }
 section{
     margin: 60px 0;
@@ -20,7 +20,8 @@ section{
   .section-title{
     font-size: 2.88rem;
     font-weight: 700;
-margin-bottom: 80px;  
+margin-bottom: 80px; 
+text-align: center; 
 }
 
 .display-flex{
@@ -51,6 +52,16 @@ margin-bottom: 80px;
    text-align: center;
 }
 
+.gradient-1{
+    background: linear-gradient( #DEF5FF 5%, #ffffff 25%);
+}
+.gradient-2{
+    background: linear-gradient(#FFF4DC 5%, #ffffff 25%);
+}
+.gradient-3{
+    background: linear-gradient( #F2E8FF 5%, #ffffff 25%);
+}
+
 /* hero banner styles  */
 .banner-container{
     align-items: center;
@@ -73,6 +84,8 @@ margin-bottom: 80px;
 /* standard curriculum styles  */
 .standard-curriculum{
     background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .curriculum-card-container{
@@ -81,7 +94,11 @@ margin-bottom: 80px;
     gap: 28px;
 }
 .curriculum-card{
-    text-align: center;
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 50px 40px;
+    border-radius: 20px;
+
 }
 .curriculum-card-description{
     font-family: "Raleway", serif;
@@ -93,7 +110,18 @@ margin-bottom: 80px;
     background-color: white;
     border: none;
     font-weight: 700;
+    margin-top: 2.2rem;
 
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+.arrow-container img{
+    width: 3.75rem;
+    height: 3.75rem;
 }
 
 
@@ -117,4 +145,21 @@ margin-bottom: 80px;
         font-size: 0.88rem;
         font-weight:500;
     }
+
+    .curriculum-card-container{
+        grid-template-columns: 1fr;
+        /* gap: 28px; */
+    }
+    section, header{
+        padding: 0 2.5%;
+    }
+    .section-title{
+        font-size: 1.63rem;
+        margin: 40px 0;
+    }
+    .arrow-container{
+        display: none;
+    }
+
+
 }
