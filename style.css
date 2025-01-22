@@ -44,6 +44,20 @@ text-align: center;
 .text-purple{
     color: #8700FF;
 }
+.bg-skyblue{
+    background-color: #3CD8E8;
+    width: 16px 20px;
+    padding: 14px 40px;
+
+}
+.bg-green{
+    background-color: #95B226;
+    padding: 10px 20px;
+}
+.bg-blue{
+    background-color: #5D58F0;
+    padding: 10px 20px;
+}
 .btn-primary{
     padding: 12px 47px;
     background-color: black;
@@ -54,6 +68,15 @@ text-align: center;
     height: 30px; */
     border: none;
    text-align: center;
+}
+.btn-secondary{
+    font-weight: bold;
+    border-radius: 48px;
+    border: none;
+   text-align: center;
+   font-family: "Raleway", serif;
+   color: white;
+   margin-top: -240px;
 }
 
 .gradient-1{
@@ -148,27 +171,32 @@ text-align: center;
     gap: 1.2rem;
 }
 .featured-card img, .small-card img{
-    border-radius: inherit;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    /* width: 100%; */
 }
 
 .featured-card, .small-card{
     border-radius: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    background-color: white;
 }
 
 .story-card-padding{
     padding: 0px 33px;
 }
 
-
+.view-all-btn-container{
+    padding: 60px 0;
+    text-align: center;
+}
 
 
 /* media query for responsiveness  */
 @media only screen and (max-width: 576px) {
-    body{
+    /* body{
         padding: 0 1rem;
-    }
+    } */
     .banner-container{
         flex-direction: column-reverse;
         gap: 20px;
@@ -182,10 +210,21 @@ text-align: center;
         font-weight:500;
     }
 
-    .curriculum-card-container{
+    .curriculum-card-container, .story-card-container{
         grid-template-columns: 1fr;
         /* gap: 28px; */
     }
+    .small-card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .featured-card{
+        display: none;}
+        .small-card{
+            font-size: 0.5rem;
+        }
+        .btn-secondary{
+            font-size: 0.5rem;
+        }
     section, header{
         padding: 0 2.5%;
     }
@@ -195,6 +234,9 @@ text-align: center;
     }
     .arrow-container{
         display: none;
+    }
+    .small-card img{
+        width: 100%;
     }
 
 
